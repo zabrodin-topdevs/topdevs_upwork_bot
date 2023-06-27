@@ -1,0 +1,10 @@
+Telegram Chatbot sends а curent temperature and wind speed from weather service "api.open-meteo.com" to telegram room 'topdevs_upwork_bot'. The weather data will be sent if it has been changed since last fetch. A script runs each 10 minutes with Crontab. 
+
+Crontab record:
+*/10 * * * * /usr/local/bin/python3 /Users/mac/Developer/Python/Bot/weather.py > /Users/mac/Developer/Python/Bot/report.txt
+
+to look at content of crontab used command:
+crontab -l 
+
+to add a schedual record used command:
+crontab -e
